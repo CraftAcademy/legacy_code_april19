@@ -4,11 +4,11 @@ Feature: User can log in
   I would like to be able to log in to my accout 
 
   Background: 
-    Given i visit the "aplication" page
+    Given i visit the "landing" page
     When i click "Log In" button 
 
   Scenario: Log in successfully
-    When i fill in "name" with "Boa"
+    When i fill in "my name" with "Boa"
     And i fill "Password" with "Password"
     And i click "Log in" button
     Then i should see "Welcome, log in successfully"
