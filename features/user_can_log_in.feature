@@ -8,7 +8,7 @@ Feature: User can log in
     When i click "Log In" button 
 
   Scenario: Log in successfully
-    When i fill in "my name" with "Boa"
+    When i fill in "my  name" with "Boa"
     And i fill "Password" with "Password"
     And i click "Log in" button
     Then i should see "Welcome, log in successfully"

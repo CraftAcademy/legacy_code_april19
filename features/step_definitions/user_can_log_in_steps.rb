@@ -4,7 +4,7 @@ Given("i visit the {string} page") do |string|
 end
 
 When("i click {string} button") do |string|
-    pending # Write code here that turns the phrase above into concrete actions
+    click_button
 end
 
 When("i fill in {string} with {string}") do |string, string2|
