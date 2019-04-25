@@ -1,17 +1,17 @@
 Feature: User can log in
   As a User 
   In order to use the application
-  I would like to be able to log in to my accout 
+  I would like to be able to log in to my account 
 
   Background: 
-    Given i visit the "landing" page
-    When i click "Log In" button 
+    Given I visit the "landing" page
+    And I click "Login" button 
 
-  Scenario: Log in successfully
-    When i fill in "my  name" with "Boa"
-    And i fill "Password" with "Password"
-    And i click "Log in" button
-    Then i should see "Welcome, log in successfully"
+  Scenario: Log in successfully 
+    When I fill in the "Email" with "craft@cool.se"
+    And I fill in the "Password" with "Password"
+    And I click "Log in" button
+    Then I should see "Sign in successfully"
 
 
     

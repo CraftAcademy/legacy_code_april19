@@ -1,20 +1,21 @@
 
-Given("i visit the {string} page") do |string|
+Given("I visit the {string} page") do |string|
     visit root_path
 end
 
-When("i click {string} button") do |string|
-    click_button
+When("I click {string} button") do |element|
+    click_on element
 end
 
-When("i fill in {string} with {string}") do |string, string2|
-    pending # Write code here that turns the phrase above into concrete actions
+When("I fill in the {string} with {string}") do |input_field, content|
+    fill_in input_field, with: content
 end
 
-When("i fill {string} with {string}") do |string, string2|
-    pending # Write code here that turns the phrase above into concrete actions
+Given("stop") do
+    save_and_open_page
 end
 
-Then("i should see {string}") do |string|
-    pending # Write code here that turns the phrase above into concrete actions
+
+Then("I should see {string}") do |string|
+    expect(page).to have_content string
 end
