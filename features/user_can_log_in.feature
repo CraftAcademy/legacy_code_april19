@@ -13,10 +13,11 @@ Feature: User can log in
     |boa  |craft@cool.se  |pwd008009|
 
   When I visit the landing page
-  When I fill in the "Email" with "craft@cool.se"
-  And I fill in the "Password" with "Password"
-  And I click "Log in" button
-  Then I should see "Sign in successfully."
+  And I click "Login" link
+  And I fill in the "user_email" with "craft@cool.se"
+  And I fill in the "user_password" with "pwd008009"
+  And I click "Log in" button 
+  Then I should see "Signed in successfully."
 
 
     
