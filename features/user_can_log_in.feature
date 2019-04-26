@@ -12,7 +12,7 @@ Feature: User can log in
     |name |email          | password|
     |boa  |craft@cool.se  |pwd008009|
 
-
+  When I visit the landing page
   When I fill in the "Email" with "craft@cool.se"
   And I fill in the "Password" with "Password"
   And I click "Log in" button

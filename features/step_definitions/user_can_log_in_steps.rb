@@ -2,10 +2,10 @@ Given("the following user exists") do  |table|
     table.hashes.each do |user|
         FactoryBot.create(:user, user)
     end
-    
+
 end 
 
-Given("I visit the {string} page") do |string|
+When("I visit the landing page") do
     visit root_path
 end
 
