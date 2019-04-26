@@ -13,8 +13,8 @@ And("I click {string} link") do |string|
     click_link string 
   end
 
-When("I fill in the {string} with {string}") do |string, string2|
-    pending # Write code here that turns the phrase above into concrete actions
+When("I fill in the {string} with {string}") do |field, user_data|
+    fill_in field, with: user_data
   end
   
   When("I click {string} button") do |string|
