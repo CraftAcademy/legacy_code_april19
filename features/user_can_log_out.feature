@@ -9,7 +9,8 @@ Feature: User can log out
             |Zane       |  zane@gmail.com   | paswoord  |
 
         Given I am logged in as "Zane"
-        Then I should see "Signed in successfully."
+        Then I should be on the landing page
+        And I should see "Signed in successfully."
         And I should see "Logout" link
         When I click on the "Logout" link
         Then I should see "Signed out successfully."
