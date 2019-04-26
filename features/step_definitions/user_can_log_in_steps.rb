@@ -11,16 +11,16 @@ end
 
 And("I click {string} link") do |string|
     click_link string 
-  end
+end
 
 When("I fill in the {string} with {string}") do |field, user_data|
     fill_in field, with: user_data
-  end
-  
-  When("I click {string} button") do |login|
+end
+
+When("I click {string} button") do |login|
     click_button login
-  end
-  
-  Then("I should see {string}") do |string|
-    pending # Write code here that turns the phrase above into concrete actions
-  end
+end
+
+Then("I should see {string}") do |content| 
+    expect(page).to have_content content
+end
