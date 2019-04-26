@@ -20,7 +20,3 @@ end
 When("I click {string} button") do |login|
     click_button login
 end
-
-Then("I should see {string}") do |content| 
-    expect(page).to have_content content
-end
