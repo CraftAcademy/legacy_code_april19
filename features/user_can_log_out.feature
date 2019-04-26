@@ -8,7 +8,7 @@ Feature: User can log out
             |name       |  email            | password  |
             |Zane       |  zane@gmail.com   | paswoord  |
 
-        Given I am logged in as Zane
+        Given I am logged in as "Zane"
         Then I should see "Signed in successfully."
         And I should see "Logout" link
         When I click on the "Logout" link

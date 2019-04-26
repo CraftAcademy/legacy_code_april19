@@ -19,3 +19,8 @@
   Then("I click {string} button") do |login|
     click_button login
   end
+
+  Given(/^I am logged in as "([^"]*)"$/) do |name|
+    user = User.find_by(name: name)
+    login_as(user, scope: :user)
+  end
