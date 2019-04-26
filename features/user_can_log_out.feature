@@ -11,7 +11,7 @@ Feature: User can log out
         Given I am logged in as "Zane"
         Then I should be on the landing page
         And I should see "Hello, Zane"
-        And I should see "Logout" link
+        Then I should see "Logout"
         When I click on the "Logout" link
         Then I should see "Signed out successfully."
         And I should be on the landing page
