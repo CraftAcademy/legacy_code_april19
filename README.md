@@ -1,9 +1,9 @@
-## CA Mailboxer 2018
+# CA Mailboxer 2018
 
-# User Stories
+## User Stories
 
 ### User can create account
-```
+``` 
 As a User
 In order to use the application
 I would like to be able to create an account
