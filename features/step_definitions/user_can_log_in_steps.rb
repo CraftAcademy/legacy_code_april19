@@ -19,3 +19,4 @@ end
 When("I click {string} button") do |login|
     click_button login
 end
+
