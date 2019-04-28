@@ -24,3 +24,13 @@
   Then("I click {string} button") do |login|
     click_button login
   end
+
+  Given("I am logged in as {string}") do |name|
+    user = User.find_by(name: name)
+    login_as(user, scope: :user)
+  end
+
+  Then("I should be on the landing page") do
+    visit root_path
+  end
+  
