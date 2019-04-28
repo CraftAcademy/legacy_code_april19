@@ -15,7 +15,7 @@ Feature: User can create account
         And I click "Create" button
         Then I should see "Welcome! You have signed up successfully"
 
-    Scenario: User can not select an email that has already been taken
+    Scenario: User can not select an email that has already been taken [Sad path] 
         When I fill in "Name" with "Noel"
         And I fill in "Email" with "noel@craft.se"
         And I fill in "Password" with "password"
@@ -31,7 +31,7 @@ Feature: User can create account
         And I click "Create" button
         Then I should see "Email has already been taken"
 
-    Scenario: User can not select a name that has already been taken
+    Scenario: User can not select a name that has already been taken [Sad path]
         When I fill in "Name" with "Noel"
         And I fill in "Email" with "noel@craft.se"
         And I fill in "Password" with "password"
