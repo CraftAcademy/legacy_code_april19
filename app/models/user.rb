@@ -5,7 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
   validates :name, length: { maximum: 10 }
-  validates :name, presence: true
+  validates_presence_of :name, :encrypted_password
   validates_uniqueness_of :name
 
   acts_as_messageable
