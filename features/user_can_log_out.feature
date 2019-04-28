@@ -3,11 +3,13 @@ Feature: User can log out
     In order to exit my account
     I would like to be able to log out
 
-    Scenario: User logs out
+    Background:
         Given the following user exists
             |name       |  email            | password  |
             |Zane       |  zane@gmail.com   | paswoord  |
 
+
+    Scenario: User logs out
         Given I am logged in as "Zane"
         Then I should be on the landing page
         And I should see "Hello, Zane"
